@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    color: beige; 
+
+ }
+
+body{
+    background: url(../../img/Carbon\ 1920x1200.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+/* HEADER */
+
+header{
+    background-color:rgba(0, 0, 0, 0.616);
+    border: 2px solid;
+    height: 100px;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius: 2rem;
+}
+
+.logo{
+    background-color: transparent;
+}
+
+.header__anchor{
+    color: beige;
+    text-decoration: none;
+}
+
+.header__menu{
+    display: inline;
+    padding: 1rem;
+    align-items:center;
+    justify-content:space-between;
+    font-size: 20px;
+}
+
+/* HEADER END */
+
+/* INDEX MAIN*/
+
+/* HERO */
+.hero{
+    background-image: url(../../img/fondo1.jpg);
+    background-position: center;
+    padding: 3rem;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 50vh;
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-items: center top;
+    padding: 2rem 1rem;
+}
+
+
+.hero__slogan{
+    text-align: center;
+    text-decoration:solid;
+    line-height: 7rem ;
+    font-size: 4rem;
+    -webkit-text-stroke: 1px beige;
+    font-family: Arial, Helvetica, sans-serif; color: #966F33;
+}
+
+.hero__fondo{
+    margin: auto;
+    display: block;
+    align-content: center;
+}
+
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* INDEX MAIN END */
+
+/* FOOTER */
+
+footer{
+    background-color: rgba(56, 56, 54, 0.616);
+    border: 2px solid;
+    height: 90px;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start ;
+    border-radius: 2rem;
+}
+
+.footer__sucursales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_item_redes{
+    display: inline-block;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+
+/* FOOTER END */
+
+/* CONTACTO FORMULARIO */
+
+.contactenos{
+    text-align: center;
+}
+
+.form{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+fieldset{
+    background: #222222;
+}
+
+legend{
+    display: inline;
+    text-align: center;
+}
+
+.form label {
+    display: block;
+}
+
+
+.form div {
+    margin: 0;
+    padding: 0.8rem;
+}
+
+.form div .block{
+    grid-column: 1 / 3;
+}
+
+.form button,
+.form input,
+.form textarea{
+    width: 99%;
+    padding: 0.7rem;
+    border: none;
+    background: none;
+    outline: 0;
+    color: beige;
+    border-bottom: 1px solid #d63031;
+}
+
+.form button{
+    background: #B70E21;
+    border: 0;
+    text-transform:uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+}
+/* CONTACTO FORMULARIO END */
+ 
+/* NOSOTROS */
+h1{
+    text-align: center;
+}
+
+.texto__origen{
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.texto__compromiso{
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.fotos__clientes{
+    text-align: center;
+}
+
+/* NOSOTROS END */
+
+/*SERVICIOS*/
+
+/* SERVICIOS END */
+
+/* PRODUCTOS */
+
+/* PRODUCTOS END */

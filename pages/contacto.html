@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&family=Raleway&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../estilos/css/styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="../index.html"><img class="logo" src="../img/logo_fondo_transparente.png" alt="logo de la empresa"></a>
+            <nav>
+                <ul class="header__list">
+                    <li class="header__menu"><a class="header__anchor" href="../index.html">INICIO</a></li>
+                    <li class="header__menu"><a class="header__anchor" href="../pages/nosotros.html">NOSOTROS</a></li>
+                    <li class="header__menu"><a class="header__anchor" href="../pages/servicios.html">SERVICIOS</a></li>
+                    <li class="header__menu"><a class="header__anchor" href="../pages/productos.html">PRODUCTOS</a></li>
+                    <li class="header__menu"><a class="header__anchor" href="">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="contactenos">Contactenos</h1>
+            <form class="form" action="" method="get" enctype="text/plain">
+                <fieldset>
+                    <legend><h2>Informacion Personal</h2></legend>
+                    <div>
+                        <label for="name">Nombre y Apellido</label>
+                        <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+                    </div>
+                    
+                    <div>
+                        <label for="age">Edad</label>
+                        <input type="text" name="age" id="age" required placeholder="Introduzca su edad">
+                    </div>
+                    
+                    <div>
+                        <label for="date">Fecha de Nacimiento</label>
+                        <input type="date" name="date" id="date" min="1922-01-01">
+                    </div>
+                    
+                    <div>
+                        <label for="mail">Email</label><input type="mail" name="mail" id="mail" required placeholder="Introduzca su correo electronico">
+                    </div>
+                    
+                    <div>
+                        <label for="Phone">Celular</label>
+                        <input type="tel" name="phone" placeholder="(+54)">
+                    </div>
+                    
+                    <div>
+                        <strong>Genero</strong>
+                    </div>
+
+                    <div class="checkbox">
+                        <div>
+                            <label for="male">Masculino</label>
+                            <input type="radio" name="gender" id="male" value="male">
+                        </div>
+                        <div>
+                            <label for="female">Femenino</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                        </div>
+                        <div>
+                            <label for="other">Otro</label>
+                            <input type="radio" name="gender" id="other" value="other">
+                        </div>
+                        <div class="block">
+                            <label for="comment">Mensaje</label>
+                            <textarea id="comment" rows="10" name="comment" placeholder="Escriba su consulta..."></textarea>
+                        </div>
+                    </div> 
+                    
+                    <button type="submit" class="btn_send">Enviar</button>
+                
+                </fieldset>
+            </form>
+
+        </main>
+          
+
+        <footer>
+            <img class="footer_logo" src="../img/logo_fondo_transparente.png" alt="">
+            
+                <div class="footer__sucursales">
+                    <h3>Sucursales</h3>
+                    <ul class="sucursales">
+                        <li>Av. Emilio Olmos 167, X5000 Córdoba <br>Telefono: 0351 423-2063</li>
+                        <li>G M Belgrano 78, X5000 Córdoba <br>Telefono: 0351 423-0747</li>
+                    </ul>                
+                </div>
+    
+                <div class="footer__servicios">
+                    <h3>Servicios</h3>
+                    <ul class="servicios">
+                        <li>Ventas por mayor y menor</li>
+                        <li>Reparacion de instrumentos musicales</li>
+                        <li>Asesoramiento Tecnico</li>
+                    </ul>
+                </div>
+    
+                <div class="footer__redes">
+                    <h3>Redes</h3>
+                    <ul class="redes">
+                        <li class="footer_item_redes"><a href="https://api.whatsapp.com/send?phone=543513823500" target="_blank"><img src="../img/whatsapp.png" width="40px" alt="contacto_whatsapp"></a></li>
+                        <li class="footer_item_redes"><a href="https://www.instagram.com/lacasadelasguitarras/?hl=es" target="_blank"><img src="../img/instagram.png" width="40px" alt="contacto_instagram"></a></p>
+                        <li class="footer_item_redes"><a href="https://www.facebook.com/casadeguitarrascba1/" target="_blank"><img src="../img/facebook.png" width="40px" alt="contacto_facebook"></a></li>
+                        
+                    </ul>
+                </div>
+            
+        </footer>
+    </body>
+</html>
