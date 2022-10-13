@@ -40,7 +40,7 @@
                         <input type="text" name="age" id="age" required placeholder="Introduzca su edad">
                     </div>
                     
-                    <div>
+                    <div class="date_block">
                         <label for="date">Fecha de Nacimiento</label>
                         <input type="date" name="date" id="date" min="1922-01-01">
                     </div>
@@ -58,23 +58,23 @@
                         <strong>Genero</strong>
                     </div>
 
-                    <div class="checkbox">
-                        <div>
+                    <div class="gender_radio">
+                        <div class="gender__radio">
                             <label for="male">Masculino</label>
                             <input type="radio" name="gender" id="male" value="male">
                         </div>
-                        <div>
+                        <div class="gender__radio">
                             <label for="female">Femenino</label>
                             <input type="radio" name="gender" id="female" value="female">
                         </div>
                         <div>
                             <label for="other">Otro</label>
                             <input type="radio" name="gender" id="other" value="other">
-                        </div>
-                        <div class="block">
-                            <label for="comment">Mensaje</label>
-                            <textarea id="comment" rows="10" name="comment" placeholder="Escriba su consulta..."></textarea>
-                        </div>
+                        </div>                        
+                    </div>
+                    <div class="block">
+                        <label for="comment">Mensaje</label>
+                        <textarea id="comment" rows="10" name="comment" placeholder="Escriba su consulta..."></textarea>
                     </div> 
                     
                     <button type="submit" class="btn_send">Enviar</button>
@@ -85,7 +85,7 @@
         </main>
           
 
-        <footer>
+        <footer class="footer">
             <img class="footer_logo" src="../img/logo_fondo_transparente.png" alt="">
             
                 <div class="footer__sucursales">
