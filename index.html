@@ -8,22 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/css/bootstrap.css">
 
     <link rel="stylesheet" href="./estilos/css/styles.css">
 </head>
 <body>
+
     <header class="header">
-        <a href="./index.html"><img class="logo" src="./img/logo_fondo_transparente.png" alt="logo de la empresa"></a>
-       
-        <nav">
-            <ul class="header__list">
-                <li class="header__menu"><a class="header__anchor" href="">INICIO</a></li>
-                <li class="header__menu"><a class="header__anchor" href="./pages/nosotros.html">NOSOTROS</a></li>
-                <li class="header__menu"><a class="header__anchor" href="./pages/servicios.html">SERVICIOS</a></li>
-                <li class="header__menu"><a class="header__anchor" href="./pages/productos.html">PRODUCTOS</a></li>
-                <li class="header__menu"><a class="header__anchor" href="./pages/contacto.html">CONTACTO</a></li>                             
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-obscure">
+            <div class="container-fluid">
+               <a href="./index.html"><img class="header__logo" src="./img/logo_fondo_transparente.png" alt="logo de la empresa"></a>
+              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon custom-toggler"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" aria-current="page" href="./index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" href="./pages/nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" href="./pages/servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" href="./pages/productos.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" href="./pages/contacto.html">CONTACTO</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -33,55 +52,78 @@
                 
             </div>
         </section>
-        
-        <section class="info">
-            <article class="info__box">
-                <h3 class="info__title">Productos de Calidad</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi consequatur minus aspernatur nesciunt a expedita voluptas autem ipsum provident distinctio deleniti dolores quis dolor et, doloremque fugit quam temporibus suscipit placeat officia alias corporis. Rerum illum, iure facere deleniti nostrum aliquid vitae architecto quos neque, alias maxime consequuntur beatae necessitatibus porro dicta ullam quia sapiente incidunt fugit mollitia atque recusandae? Asperiores molestias amet quaerat repellat corrupti eum autem sint tenetur illum numquam architecto explicabo unde optio, earum, distinctio recusandae nesciunt harum sunt molestiae laborum dolorem repudiandae! Dicta, aliquid est mollitia necessitatibus exercitationem similique adipisci voluptatem, maiores incidunt, fuga ex!</p>
-             </article>
-             <article class="info__box">
-                <h3 class="info__title">Reparaciones a Medida</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloremque quaerat facilis ea rem, perferendis eos aliquid itaque architecto deleniti dolor consequatur assumenda at labore enim veniam ullam cumque debitis vel. Expedita neque similique totam assumenda nam voluptates delectus nisi quidem molestias magnam pariatur tenetur excepturi sequi fugiat est possimus odit sapiente eaque officiis eius, tempora quia. Harum voluptates ullam itaque, natus laudantium doloribus voluptatibus accusamus accusantium quibusdam reiciendis, recusandae beatae ab dolores aperiam saepe id aliquam impedit labore modi culpa? Corrupti deserunt autem veniam voluptates explicabo odio sit ducimus officiis. Consequuntur, pariatur magnam rem minus accusantium totam aperiam earum.</p>
-             </article>
-             <article class="info__box">
-                <h3 class="info__title">Consejos con la Mejor Voluntad</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatem veniam veritatis alias? Quasi velit eius officia, incidunt architecto quae neque repudiandae voluptatem quod laudantium, minus quos vero fugiat error commodi. Rerum optio architecto labore dolorum iure officiis fugiat ratione quibusdam? Maxime sed maiores sunt quia nemo veniam commodi nesciunt.</p>
-             </article>
-        </section>
+                   
+        <div class="row justify-content-around">
+            
+            <div class="col-md-4 card m-1" style="width: 40rem;"data-aos="zoom-in"  data-aos-duration="2000">
+                <img src="./img/index_asesoramiento.jpg"class="card-img-top " alt="Servicio de diagnóstico">
+                <div class="card-body">
+                    <h3 class="card-title text-center">ASESORAMIENTOS CONLA MEJOR VOLUNTAD</h3>
+                    <p class="card-text fs-5">Sabemos que siempre va ahaber dudas a la hora de empezar algo nuevo. Es poreso que elegimos acompañarte en tu nuevo recorrido.Te ayudaremos con todo nuestro conocimiento y teofreceremos todo lo necesario para iniciar esta nuevaetapa en tu vida.   .</p>
+                </div>
+            </div>
 
+            <div class="col-md-4 card m-1" style="width: 40rem;"data-aos="zoom-in"  data-aos-duration="1000">
+                <img src="./img/index_producto.jpg" class="card-img-top"alt="Servicio de Atención Clínica">
+                <div class="card-body">
+                    <h3 class="cardTitle text-center">PRODUCTOS DECALIDAD</h3>
+                    <p class="card-text fs-5">Quien no conoce a dios acualquier santo le reza. De la misma forma a quien noconoce un buen instrumento cualquier sonido produce.A la hora de elegir, uno tiene que elegir lo mejorque pueda, ya sea por marcas, por material y porprecio, nosotros te ofrecemos lo que buscas </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 card m-1" style="width: 40rem;"data-aos="zoom-in"  data-aos-duration="3000">
+                <img src="./img/index_reparacion.png" class="card-img-topw-100" alt="Servicio de cirugías">
+                <div class="card-body">
+                    <h3 class="card-title text-center">REPARACIONES AMEDIDA</h3>
+                    <p class="card-text fs-5">Aquellos instrumentos quenos acompañan toda la vida y ya son parte de uno, sonimportantes para nosotros, es por eso que a veces nopodemos despegarnos de ellos por mas que pudieramostener algo mejor. Razon por la cual te ofrecemosrepararlos.</p>
+                </div>
+            </div>
+                
+        </div>
+        
     </main>
     
     <footer class="footer">
-        <img class="footer_logo" src="./img/logo_fondo_transparente.png" alt="">
-        
-            <div class="footer__sucursales">
-                <h3>Sucursales</h3>
-                <ul class="sucursales">
-                    <li>Av. Emilio Olmos 167, X5000 Córdoba <br>Telefono: 0351 423-2063</li>
-                    <li>G M Belgrano 78, X5000 Córdoba <br>Telefono: 0351 423-0747</li>
-                </ul>                
-            </div>
+        <div class="container">
+            <div class="footer__row">
+                <img class="footer__logo" src="./img/logo_fondo_transparente.png" alt="">
+                 
+                <div class="footer__col">
+                    <h3>Sucursales</h3>
+                    <ul>
+                        <li>Av. Emilio Olmos 167, X5000 Córdoba <br>Telefono: 0351 423-2063</li>
+                        <li>G M Belgrano 78, X5000 Córdoba <br>Telefono: 0351 423-0747</li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li>Ventas por mayor y menor</li>
+                        <li>Reparacion de instrumentos musicales</li>
+                        <li>Asesoramiento Tecnico</li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3>Redes</h3>
+                    <div class="social-links">
+                        <a class="social-links__logo" href=" https://api.whatsapp.com/send?phone=543513823500"target="_blank">
+                        <img src="./img/whatsapp.png" width="40px" alt="contacto_whatsapp">
+                        </a>
 
-            <div class="footer__servicios">
-                <h3>Servicios</h3>
-                <ul class="servicios">
-                    <li>Ventas por mayor y menor</li>
-                    <li>Reparacion de instrumentos musicales</li>
-                    <li>Asesoramiento Tecnico</li>
-                </ul>
-            </div>
+                        <a class="social-links__logo" href="https://www.instagram.com/lacasadelasguitarras/?hl=es" target="_blank"><img src="./img/instagram.png" width="40px" alt="contacto_instagram"></a>
 
-            <div class="footer__redes">
-                <h3>Redes</h3>
-                <ul class="redes">
-                    <li class="footer_item_redes"><a href="https://api.whatsapp.com/send?phone=543513823500" target="_blank"><img src="./img/whatsapp.png" width="40px" alt="contacto_whatsapp"></a></li>
-                    <li class="footer_item_redes"><a href="https://www.instagram.com/lacasadelasguitarras/?hl=es" target="_blank"><img src="./img/instagram.png" width="40px" alt="contacto_instagram"></a></p>
-                    <li class="footer_item_redes"><a href="https://www.facebook.com/casadeguitarrascba1/" target="_blank"><img src="./img/facebook.png" width="40px" alt="contacto_facebook"></a></li>
-                    
-                </ul>
+                        <a class="social-links__logo" href="https://www.facebook.com/casadeguitarrascba1/" target="_blank"><img src="./img/facebook.png" width="40px" alt="contacto_facebook"></a>
+                        
+                    </div>
+                </div>
+
+
+
             </div>
+        </div>
         
     </footer>
-
+    
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&family=Raleway&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="../estilos/css/bootstrap.css"> 
+    
     <link rel="stylesheet" href="../estilos/css/styles.css">
 </head>
 <body>
     <header class="header">
-        <a href="../index.html"><img class="logo" src="../img/logo_fondo_transparente.png" alt="logo de la empresa"></a>
-        
-        <nav>
-            <ul class="header__list">
-                <li class="header__menu"><a class="header__anchor" href="../index.html">INICIO</a></li>
-                <li class="header__menu"><a class="header__anchor" href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li class="header__menu"><a class="header__anchor" href="../pages/servicios.html">SERVICIOS</a></li>
-                <li class="header__menu"><a class="header__anchor" href="">PRODUCTOS</a></li>
-                <li class="header__menu"><a class="header__anchor" href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        
+        <nav class="navbar navbar-expand-lg bg-obscure">
+            <div class="container-fluid">
+               <a href="./index.html"><img class="header__logo" src="../img/logo_fondo_transparente.png" alt="logo de la empresa"></a>
+              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon custom-toggler"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+
+
+                <ul class="navbar-nav">
+                  
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" href="../index.html">INICIO</a>
+                  </li>        
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" href="../pages/productos.html">NOSOTROS</a>
+                  </li>          
+                  
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" href="../pages/servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" aria-current="page" href="./productos.html">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item header__menu">
+                    <a class="nav-link header__anchor" href="../pages/contacto.html">CONTACTO</a>
+                  </li>
+                  
+                  
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
     </header>
     
     <main>
@@ -44,35 +69,46 @@
         </section>
     </main>
     <footer class="footer">
-        <img class="footer_logo" src="../img/logo_fondo_transparente.png" alt="">
-        
-            <div class="footer__sucursales">
-                <h3>Sucursales</h3>
-                <ul class="sucursales">
-                    <li>Av. Emilio Olmos 167, X5000 Córdoba <br>Telefono: 0351 423-2063</li>
-                    <li>G M Belgrano 78, X5000 Córdoba <br>Telefono: 0351 423-0747</li>
-                </ul>                
-            </div>
+      <div class="container">
+          <div class="footer__row">
+              <img class="footer__logo" src="../img/logo_fondo_transparente.png" alt="">
+               
+              <div class="footer__col">
+                  <h3>Sucursales</h3>
+                  <ul>
+                      <li>Av. Emilio Olmos 167, X5000 Córdoba <br>Telefono: 0351 423-2063</li>
+                      <li>G M Belgrano 78, X5000 Córdoba <br>Telefono: 0351 423-0747</li>
+                  </ul>
+              </div>
+              <div class="footer__col">
+                  <h3>Servicios</h3>
+                  <ul>
+                      <li>Ventas por mayor y menor</li>
+                      <li>Reparacion de instrumentos musicales</li>
+                      <li>Asesoramiento Tecnico</li>
+                  </ul>
+              </div>
+              <div class="footer__col">
+                  <h3>Redes</h3>
+                  <div class="social-links">
+                      <a class="social-links__logo" href=" https://api.whatsapp.com/send?phone=543513823500"target="_blank">
+                      <img src="../img/whatsapp.png" width="40px" alt="contacto_whatsapp">
+                      </a>
 
-            <div class="footer__servicios">
-                <h3>Servicios</h3>
-                <ul class="servicios">
-                    <li>Ventas por mayor y menor</li>
-                    <li>Reparacion de instrumentos musicales</li>
-                    <li>Asesoramiento Tecnico</li>
-                </ul>
-            </div>
+                      <a class="social-links__logo" href="https://www.instagram.com/lacasadelasguitarras/?hl=es" target="_blank"><img src="../img/instagram.png" width="40px" alt="contacto_instagram"></a>
 
-            <div class="footer__redes">
-                <h3>Redes</h3>
-                <ul class="redes">
-                    <li class="footer_item_redes"><a href="https://api.whatsapp.com/send?phone=543513823500" target="_blank"><img src="../img/whatsapp.png" width="40px" alt="contacto_whatsapp"></a></li>
-                    <li class="footer_item_redes"><a href="https://www.instagram.com/lacasadelasguitarras/?hl=es" target="_blank"><img src="../img/instagram.png" width="40px" alt="contacto_instagram"></a></p>
-                    <li class="footer_item_redes"><a href="https://www.facebook.com/casadeguitarrascba1/" target="_blank"><img src="../img/facebook.png" width="40px" alt="contacto_facebook"></a></li>
-                    
-                </ul>
-            </div>
-        
-    </footer>
+                      <a class="social-links__logo" href="https://www.facebook.com/casadeguitarrascba1/" target="_blank"><img src="../img/facebook.png" width="40px" alt="contacto_facebook"></a>
+                      
+                  </div>
+              </div>
+
+
+
+          </div>
+      </div>
+      
+  </footer>
+
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

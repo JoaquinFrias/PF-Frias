@@ -6,6 +6,9 @@ html{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    color: beige;
+    box-sizing: border-box;
+    
 }
 
 :root{
@@ -17,11 +20,13 @@ body{
     background: url(../../img/Carbon\ 1920x1200.png);
     background-size:cover;
     background-repeat:no-repeat;
+    
 }
 
 h1{
     text-align: center;
     font-size: 3rem ;
+    
 }
 h2{
     font-size: 2rem;
@@ -34,21 +39,25 @@ p{
 }
 /* HEADER */
 
-header{
+.header{
     background-color:rgba(0, 0, 0, 0.616);
     border: 2px solid;
-    height: 100px;
-    margin: 1.6rem;
-    padding: 1.6rem;
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
+    margin: 0.5rem;
     border-radius: 3.2rem;
+    color: beige;
+       
+}
+
+.navbar{
+    box-sizing: border-box;
+    
 }
 
 
-.logo{
+.header__logo{
     background-color: transparent;
+    max-width: 200px ;
+  
 }
 
 .header__anchor{
@@ -57,12 +66,23 @@ header{
 }
 
 .header__menu{
-    display: inline;
-    padding: 1.6rem;
+    
+    padding: 1rem;
     align-items:center;
-    justify-content:space-between;
-    font-size: 20px;
+    font-size: 2em;
+    
 }
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,220, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border: 1px;
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: beige;
+    border-width: 2px;
+  } 
+
 
 /* HEADER END */
 
@@ -81,16 +101,20 @@ header{
     justify-content:center;
     align-items: center top;
     padding: 3.2rem 1.6rem;
+    box-sizing: content-box;
+    
 }
 
 
-.hero__slogan{
+.hero__box .hero__slogan {
     text-align: center;
     text-decoration:solid;
     line-height: 11.2rem ;
     font-size: 6.4rem;
     -webkit-text-stroke: 1px beige;
     font-family: Arial, Helvetica, sans-serif; color: #966F33;
+    font-weight:bolder;
+    box-sizing:border-box;
 }
 
 .hero__fondo{
@@ -100,52 +124,79 @@ header{
 }
 /* HERO END */
 
-.info{
+.unionCajasServicios div a {
+    background-color: rgb(66, 64, 64);
+    color: #f0dfc6;
+    border-radius: 10px;
+  }
+
+.card {
+    border-radius: 1rem;
+    border: solid;
+    max-width: 100%;
+    background-color: black;    
+    border-color:beige;
+  }
+
+  .card-body{
+    
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    text-align: justify;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    align-self: center;
+  }
+
 
 /* INDEX MAIN END */
 
 /* FOOTER */
 
 footer{
-    background-color: rgba(56, 56, 54, 0.616);
-    border: 2px solid;
-    height: 90px;
-    margin: 1.6rem;
-    padding: 1.6rem;
+    
     display: flex;
     justify-content:space-between;
     align-items:flex-start ;
+    
+    
+}
+
+.footer__row{
+    background-color: rgba(56, 56, 54, 0.616);
+    border: 2px solid;
     border-radius: 3.2rem;
-    font-size: 1.6rem;
-}
-
-.footer__sucursales{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
-.footer__servicios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer__logo{
+    background-color: transparent;
+    max-width: 200px ;
+    height:min-content;
 }
 
-.footer__redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.footer__col{
+    width: 20%;
+    padding: 0px;
+    justify-content: center;
+ }
 
-.footer_item_redes{
-    display: inline-block;
-    align-items: center;
-    padding: 0.8rem 0.8rem;
-}
+ .footer__col h3{
+    text-align: center;
+ }
 
+ 
+
+ 
 /* FOOTER END */
 
 /* CONTACTO FORMULARIO */
@@ -225,7 +276,7 @@ legend{
 .fotos__clientes{
     text-align: center;
 }
-
+  
 
 
 /* NOSOTROS END */
@@ -237,3 +288,34 @@ legend{
 /* PRODUCTOS */
 
 /* PRODUCTOS END */
+@media(max-width: 768px){
+    .footer__col{
+      width: 50%;
+      margin-top: 10%;
+      margin-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem
+  }
+  }
+  @media(max-width: 476px){
+    .footer__col{
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+      align-items: center;
+      justify-content: center;
+  }
+ 
+  @media(max-width: 445px){
+    .hero__box .hero__slogan {
+        font-size: 5.4rem;
+
+
+
+    }
+  
+  }}
