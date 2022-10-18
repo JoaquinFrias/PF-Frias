@@ -33,6 +33,7 @@ h2{
 }
 h3{
     font-size: 1.6rem;
+    text-align: center;
 }
 p{
     font-size: 1.6rem;
@@ -52,6 +53,11 @@ p{
     box-sizing: border-box;
     
 }
+
+.header__anchor:hover{
+    color: red;
+}
+
 
 
 .header__logo{
@@ -95,7 +101,7 @@ p{
     padding: 3rem;
     background-size: cover;
     background-repeat:no-repeat;
-    height: 50vh;
+    height: 75vh;
     position:relative;
     display: flex;
     justify-content:center;
@@ -283,9 +289,26 @@ legend{
 
 /*SERVICIOS*/
 
+
 /* SERVICIOS END */
 
 /* PRODUCTOS */
+#galeria .col-lg-4{
+    padding: 1.5rem;
+    
+}
+
+
+#galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+#galeria img:hover{
+    border: 5px solid black;
+}
+
+
 
 /* PRODUCTOS END */
 @media(max-width: 768px){
