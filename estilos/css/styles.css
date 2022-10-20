@@ -304,23 +304,31 @@ legend{
 /* NOSOTROS END */
 
 /*SERVICIOS*/
+#galeria_servicios img{
+    width: 100%;
+    height: 100%;
+}
+
+#galeria_servicios .col-lg-4{
+    padding: 1rem;
+}
 
 
 /* SERVICIOS END */
 
 /* PRODUCTOS */
-#galeria .col-lg-4{
+#galeria_productos .col-lg-4{
     padding: 1.5rem;
     
 }
 
 
-#galeria img{
+#galeria_productos img{
     width: 100%;
     height: 100%;
 }
 
-#galeria img:hover{
+#galeria_productos img:hover{
     border: 5px solid black;
 }
 
