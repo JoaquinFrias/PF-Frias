@@ -64,7 +64,7 @@ p{
 
 .header__logo{
     background-color: transparent;
-    max-width: 200px ;
+    max-width: 20rem ;
     animation: appear 1.3s 1 linear;
   
 }
@@ -281,24 +281,17 @@ legend{
 /* CONTACTO FORMULARIO END */
  
 /* NOSOTROS */
-
-
-.texto__origen{
-    padding: 1.6rem;
-    align-items: center;
-    text-align: center;
+#galeria_nosotros img{
+    width: 100%;
+    height: 100%;
 }
 
-.texto__compromiso{
-    padding: 1.6rem;
-    align-items: center;
-    text-align: center;
+#galeria_nosotros iframe{
+    width: 56rem;
+    height: 31.5rem;
+   
 }
 
-.fotos__clientes{
-    text-align: center;
-}
-  
 
 
 /* NOSOTROS END */
@@ -363,7 +356,11 @@ legend{
 
     }
   
-  }}
+  }
+ 
+  
+  }
+
 
   @keyframes appear {
     0% {transform: translate(-500px);
