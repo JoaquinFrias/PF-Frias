@@ -13,7 +13,6 @@
 
         <link rel="stylesheet" href="../estilos/css/styles.css">
     </head>
-
     <body>
         <header class="header">
             <nav class="navbar navbar-expand-lg bg-obscure">
@@ -48,74 +47,59 @@
             <div class="container-fluid">
                 <div class="row">
                     <h1 class="contactenos">Contactenos</h1>
-            <form class="form" action="" method="get" enctype="text/plain">
-                <fieldset>
-                    <legend><h2>Informacion Personal</h2></legend>
-                    <div>
-                        <label for="name">Nombre y Apellido</label>
-                        <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
-                    </div>
-                    
-                    <div>
-                        <label for="age">Edad</label>
-                        <input type="text" name="age" id="age" required placeholder="Introduzca su edad">
-                    </div>
-                    
-                    <div class="date_block">
-                        <label for="date">Fecha de Nacimiento</label>
-                        <input type="date" name="date" id="date" min="1922-01-01">
-                    </div>
-                    
-                    <div>
-                        <label for="mail">Email</label><input type="mail" name="mail" id="mail" required placeholder="Introduzca su correo electronico">
-                    </div>
-                    
-                    <div>
-                        <label for="Phone">Celular</label>
-                        <input type="tel" name="phone" placeholder="(+54)">
-                    </div>
-                    
-                    <div>
-                        <strong>Genero</strong>
-                    </div>
-
-                    <div class="gender_radio">
-                        <div class="gender__radio">
-                            <label for="male">Masculino</label>
-                            <input type="radio" name="gender" id="male" value="male">
-                        </div>
-                        <div class="gender__radio">
-                            <label for="female">Femenino</label>
-                            <input type="radio" name="gender" id="female" value="female">
-                        </div>
-                        <div>
-                            <label for="other">Otro</label>
-                            <input type="radio" name="gender" id="other" value="other">
-                        </div>                        
-                    </div>
-                    <div class="block">
-                        <label for="comment">Mensaje</label>
-                        <textarea id="comment" rows="10" name="comment" placeholder="Escriba su consulta..."></textarea>
-                    </div> 
-                    
-                    <button type="submit" class="btn_send">Enviar</button>
-                
-                </fieldset>
-            </form>
-
-
+                    <form class="form" action="" method="get" enctype="text/plain">
+                        <fieldset>
+                            <legend><h2>Informacion Personal</h2></legend>
+                            <div>
+                                <label for="name">Nombre y Apellido</label>
+                                <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+                            </div>
+                            <div>
+                                <label for="age">Edad</label>
+                                <input type="text" name="age" id="age" required placeholder="Introduzca su edad">
+                            </div>
+                            <div class="date_block">
+                                <label for="date">Fecha de Nacimiento</label>
+                                <input type="date" name="date" id="date" min="1922-01-01">
+                            </div>
+                            <div>
+                                <label for="mail">Email</label><input type="mail" name="mail" id="mail" required placeholder="Introduzca su correo electronico">
+                            </div>
+                            <div>
+                                <label for="Phone">Celular</label>
+                                <input type="tel" name="phone" placeholder="(+54)">
+                            </div>
+                            <div>
+                                <strong>Genero</strong>
+                            </div>
+                            <div class="gender_radio">
+                                <div class="gender__radio">
+                                    <label for="male">Masculino</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+                                </div>
+                                <div class="gender__radio">
+                                    <label for="female">Femenino</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                </div>
+                                <div class="gender__radio">
+                                    <label for="other">Otro</label>
+                                    <input type="radio" name="gender" id="other" value="other">
+                                </div>                        
+                            </div>
+                            <div class="block">
+                                <label for="comment">Mensaje</label>
+                                <textarea id="comment" rows="10" name="comment" placeholder="Escriba su consulta..."></textarea>
+                            </div> 
+                            <button type="submit" class="btn_send">Enviar</button>
+                        </fieldset>
+                    </form>
                 </div>
-
             </div>
-            
-
         </main>
-
         <footer class="footer">
             <div class="container-fluid">
                 <div class="footer__row">
-                    <img class="footer__logo" src="../img/logo_fondo_transparente.png" alt="">
-                     
+                    <img class="footer__logo" src="../img/logo_fondo_transparente.png" alt="logo de la empresa">
                     <div class="footer__col">
                         <h3>Sucursales</h3>
                         <ul>
@@ -137,17 +121,13 @@
                             <a class="social-links__logo" href=" https://api.whatsapp.com/send?phone=543513823500"target="_blank">
                             <img src="../img/whatsapp.png" width="40px" alt="contacto_whatsapp">
                             </a>
-    
                             <a class="social-links__logo" href="https://www.instagram.com/lacasadelasguitarras/?hl=es" target="_blank"><img src="../img/instagram.png" width="40px" alt="contacto_instagram"></a>
-    
                             <a class="social-links__logo" href="https://www.facebook.com/casadeguitarrascba1/" target="_blank"><img src="../img/facebook.png" width="40px" alt="contacto_facebook"></a>
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-
         <script src="../js/bootstrap.bundle.js"></script>
     </body>
 </html>
