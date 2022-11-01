@@ -1,0 +1,18 @@
+/* BASE */
+@import "./base/normalize";
+@import "./base/tipografias";
+
+/* PARTIALS */
+@import "./partials/header";
+@import "./partials/footer";
+
+/* PAGES */
+@import "./pages/inicio";
+@import "./pages/nosotros";
+@import "./pages/contacto";
+@import "./pages/productos";
+@import "./pages/servicios";
+
+/* UTILITIES */
+@import "./utilities/animation";
+

@@ -1,0 +1,32 @@
+.header{
+    background-color:rgba(0, 0, 0, 0.8);
+    border: 2px solid;
+    margin: 0.5rem;
+    border-radius: 3.2rem;
+    color: beige;
+    &__logo{  
+        background-color: transparent;
+        max-width: 20rem ;
+        animation: appear 1.3s 1 linear;
+    }
+    &__anchor{
+        color: beige;
+        text-decoration: none;
+        &:hover{
+            color: red;
+        }
+    }
+    &__menu{    
+        padding: 1rem;
+        align-items:center;
+        font-size: 2em;
+    }
+}  
+.custom-toggler {
+    border-color: beige;
+    border-width: 2px;
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,220, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        border: 1px;
+      }
+} 
