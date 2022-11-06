@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoaquinFrias/PreEntrega2-Frias.git"
+    "url": "git+https://github.com/JoaquinFrias/PreEntrega3-Frias.git"
   },
   "author": "joaquin frias",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JoaquinFrias/PreEntrega2-Frias/issues"
+    "url": "https://github.com/JoaquinFrias/PreEntrega3-Frias/issues"
   },
-  "homepage": "https://github.com/JoaquinFrias/PreEntrega2-Frias#readme",
+  "homepage": "https://github.com/JoaquinFrias/PreEntrega3-Frias#readme",
   "devDependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"

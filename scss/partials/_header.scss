@@ -1,19 +1,19 @@
 .header{
-    background-color:rgba(0, 0, 0, 0.8);
+    background-color: black;
     border: 2px solid;
     margin: 0.5rem;
     border-radius: 3.2rem;
-    color: beige;
+    color: $color-primero;
     &__logo{  
         background-color: transparent;
         max-width: 20rem ;
         animation: appear 1.3s 1 linear;
     }
     &__anchor{
-        color: beige;
+        color: $color-primero;
         text-decoration: none;
         &:hover{
-            color: red;
+            color: $color-segundo;
         }
     }
     &__menu{    
@@ -23,7 +23,7 @@
     }
 }  
 .custom-toggler {
-    border-color: beige;
+    border-color: $color-primero;
     border-width: 2px;
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,245,220, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");

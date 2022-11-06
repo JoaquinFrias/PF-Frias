@@ -6,15 +6,15 @@ html{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    color: beige;
+    color: $color-primero;
     box-sizing: border-box;
     
 }
 
 :root{
-    color: beige; 
+    color: $color-primero; 
 
- }
+}
 
 body{
     background: url(../../img/background_carbon.png)no-repeat center center fixed;

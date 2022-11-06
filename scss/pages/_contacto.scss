@@ -7,7 +7,7 @@
     margin: 0 auto;
     font-size: 1.6rem;
     fieldset{
-        background: #222222;
+        background: $color-sexto;
         legend{
             display: inline;
             text-align: center;
@@ -31,11 +31,11 @@
         border: none;
         background: none;
         outline: 0;
-        color: beige;
-        border-bottom: 1px solid #d63031;
+        color: $color-primero;
+        border-bottom: 1px solid $color-segundo;
     }
     button{
-        background: #B70E21;
+        background: $color-segundo;
         border: 0;
         text-transform:uppercase;
         font-size: 1.6rem;

@@ -4,10 +4,9 @@
         padding: 1.5rem;
     }
     img{
-        width: 100%;
-        height: 100%;
+        @include image-size;
         &:hover{
-            border: 5px solid black;
+            border: 5px solid $color-tercero;
         }
     }
 }

@@ -1,8 +1,7 @@
 /* PAGE NOSOTROS */
 #galeria_nosotros{
     img{
-        width: 100%;
-        height: 100%;
+        @include image-size;
     } 
     iframe{
         width: 56rem;
